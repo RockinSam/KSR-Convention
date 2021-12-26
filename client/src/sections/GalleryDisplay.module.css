@@ -1,0 +1,150 @@
+
+.gallery_display {
+    min-height: 75vh;
+}
+
+.gallery_display h1 {
+    font-family: 'Gwendolyn', sans-serif;
+    color: #7851a9;
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+.underline {
+    width: 100px;
+    height: 2px;
+    background-color: #7851a9;
+    margin: auto;
+}
+
+
+/*================================*/
+.media_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: 50px auto;
+}
+
+.media_div img {
+    width: 300px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.media_div img:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 1200px) {
+    
+    .media_div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 850px) {
+    
+    .media_div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 380px) {
+    
+    .media_div img {
+        width: 250px;
+    }
+}
+
+/*====================================*/
+.main_viewer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: rgb(0, 0, 0, 0.9);
+    z-index: 3;
+}
+
+.close_btn {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.inner_viewer_div {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.arrows_div_left, .arrows_div_right {
+    height: 100%;
+    margin: auto;
+}
+
+.arrows_div_left img, .arrows_div_right img {
+    width: 50px;
+    margin: auto 20px;
+    cursor: pointer;
+}
+
+.main_img_div {
+    width: 120vh;
+    height: 85vh;
+    margin: auto;
+}
+
+.main_img_div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+@media (max-width: 1300px) {
+
+    .arrows_div_left {
+        position: fixed;
+        left: 0px;
+    }
+
+    .arrows_div_right {
+        position: fixed;
+        right: 0px;
+    }
+
+    .arrows_div_left img, .arrows_div_right img {
+        padding: 10px;
+        margin: auto;
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+
+    .main_img_div {
+        width: 100%;
+    }
+
+    .main_img_div img {
+        width: 100%;
+    }
+}
+
+@media (max-height: 500px) {
+
+    .main_viewer {
+        height: 100%;
+        overflow: scroll;
+    }
+}
+

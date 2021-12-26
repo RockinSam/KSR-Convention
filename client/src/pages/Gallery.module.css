@@ -1,0 +1,8 @@
+
+.gallery{
+    width: 100%;
+    text-align: center;
+    background: url('../res/bg-flower-3.png');
+    background-repeat: repeat;
+    background-position: center;
+}

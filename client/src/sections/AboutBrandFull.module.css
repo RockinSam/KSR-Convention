@@ -1,0 +1,169 @@
+
+.about_brand_full {
+    width: 100%;
+    padding: 100px;
+    background: url('../res/bg-flower-4.png');
+    background-repeat: repeat-y;
+    background-position: top;
+}
+
+.about_brand_full h2 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+@media (max-width: 820px) {
+    
+    .about_brand_full {
+        padding: 50px;
+    }
+
+    .about_brand_full h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 680px) {
+    
+    .about_brand_full {
+        padding: 20px;
+    }
+}
+
+
+/* ========= Contents ===========*/
+.about_div, .suitables_div, .features_div, .contact_div {
+    width: 70%;
+    margin: auto;
+}
+
+.suitables_div, .features_div, .contact_div {
+    margin-top: 100px;
+}
+
+.about_div h1 {
+    font-family: 'Gwendolyn', sans-serif;
+    color: #7851a9;
+    font-size: 60px;
+}
+
+.about_div p {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 30px;
+    margin: auto;
+    text-align: justify;
+}
+
+.underline {
+    width: 100px;
+    height: 2px;
+    background-color: #7851a9;
+    margin: 10px;
+}
+
+.suitables_div div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.suitables_div figure {
+    text-align: center;
+    margin: 20px;
+}
+
+.suitables_div img{
+    width: 300px;
+    border-radius: 50%;
+}
+
+.suitables_div figcaption {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    margin: auto 30px;
+}
+
+.features_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.features_div figure {
+    display: flex;
+    margin: 20px;
+}
+
+.features_div img{
+    width: 100px;
+}
+
+.features_div figcaption {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 30px;
+    margin: auto 30px;
+    text-align: justify;
+}
+
+.contact_div {
+    text-align: center;
+}
+
+
+@media (max-width: 1700px) {
+    
+    .suitables_div img{
+        width: 250px;
+    }
+}
+
+@media (max-width: 1400px) {
+    
+    .about_div, .suitables_div, .features_div, .contact_div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1250px) {
+    
+    .about_div, .suitables_div, .features_div, .contact_div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1100px) {
+    
+    .about_div, .suitables_div, .features_div, .contact_div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 820px) {
+    
+    .about_div h1 {
+        font-size: 50px;
+    }
+
+    .about_div p, .features_div figcaption {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 680px) {
+    
+    .features_div figure {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .features_div img, .features_div figcaption {
+        margin: auto;
+    }
+
+    .contact_div button {
+        width: 100%;
+    }
+}
+
+

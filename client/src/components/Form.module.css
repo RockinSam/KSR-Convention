@@ -1,0 +1,88 @@
+
+.form_div {
+    width: 50%;
+    padding: 50px;  
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 100px;
+  }
+  
+  .form {
+    padding: 1rem;
+  }
+  
+  .input_div {
+    margin-bottom: 0.5rem;
+  }
+  
+  .input_div label {
+    display: block;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+    
+  .input_div input,
+  .input_div textarea {
+    display: block;
+    font: inherit;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 0.25rem;
+    width: 100%;
+  }
+    
+  .action {
+    margin-top: 1rem;
+    text-align: center;
+  }
+    
+  .action button {
+    cursor: pointer;
+  }
+
+  .output_div {
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  @media (max-width: 1500px) {
+    
+    .form_div {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    
+    .form_div {
+      width: 80%;
+      margin: 80px auto;
+    }
+  }
+  
+  @media (max-width: 820px) {
+    
+    .form_div {
+      width: 100%;
+      margin: 0;
+      margin-top: 50px;
+    }
+  }
+  
+  @media (max-width: 680px) {
+  
+    .action, .action button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    
+    .form_div {
+      padding: 20px;
+    }
+  }
